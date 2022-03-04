@@ -75,11 +75,13 @@ const TodoCreate = () => {
 
   return (
     <>
-        {open && <InsertFormPositioner>
-            <InsertForm>
-                <Input placeholder='할 일을 입력 후, Enter를 누르세요' autoFocus />
-            </InsertForm>
-        </InsertFormPositioner>}
+        {
+            open && <InsertFormPositioner>
+                <InsertForm>
+                    <Input placeholder='할 일을 입력 후, Enter를 누르세요' autoFocus />
+                </InsertForm>
+            </InsertFormPositioner>
+        }
         <CircleButton open={open} onClick={onToggle}>
             <MdAdd />
         </CircleButton>
